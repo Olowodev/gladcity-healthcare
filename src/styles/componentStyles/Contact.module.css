@@ -1,6 +1,7 @@
 .contact {
     width: 100%;
     position: relative;
+    margin-top: 20px;
 }
 
 .contactCont {
@@ -60,7 +61,7 @@
     white-space: pre-line;
     font-weight: 700;
     font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
-    margin-bottom: 0;
+    margin-bottom: 10px;
     line-height: 1.2;
     letter-spacing: -0.05em;
 }
@@ -176,6 +177,7 @@
 
     .contactLeft {
         width: 100%;
+        margin-top: 20px;
     }
 
     .contactLeft > h1 {
@@ -199,7 +201,7 @@
     }
 
     .contactLeft > form > button {
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
     .contactRight {

@@ -98,3 +98,13 @@
     text-decoration: none;
     color: #000;
   }
+
+  @media screen and (max-width: 768px) {
+    .buttonHolder {
+      display: none;
+    }
+
+    .logo > h1 {
+      font-size: calc(0.75rem * 1.25);
+    }
+  }

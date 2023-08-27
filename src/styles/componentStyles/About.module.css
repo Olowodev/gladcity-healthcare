@@ -57,7 +57,7 @@
 .content > h1 {
     line-height: 1.2;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: calc(calc(calc( 1rem * 1.25) * 1.25) * 1.25);
     letter-spacing: -0.05em;
 }
@@ -143,7 +143,7 @@
     }
 
     .aboutImg {
-        margin-top: 0.625rem;
+        margin-top: 1.5rem;
         width: 100%;
         height: calc(600px/2);
     }
