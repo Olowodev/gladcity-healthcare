@@ -2,8 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import Services from '@/components/Services'
+import About from '@/components/About'
+import Contact from '@/components/Contact'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export default function Home() {
   return (
@@ -14,7 +20,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={inter.variable}>
+        <Navbar />
+        <Header />
+        <Services />
+        <About />
+        <Contact />
+        <Footer />
+      </main>
+      {/* <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -108,7 +122,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
     </>
   )
 }

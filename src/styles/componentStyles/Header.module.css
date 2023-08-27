@@ -1,0 +1,217 @@
+.header {
+    margin-top: 75px;
+    width: 100%;
+    position: relative;
+}
+
+.header section {
+    padding: 0 calc(0.625rem * 2);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header section {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.sectionWrapper {
+    background-color: #eee;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.innerContent {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.banner {
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
+
+.innerBanner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(0.625rem * 5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bannerHead {
+    width: 100%;
+    margin-bottom: calc(0.625rem * 2);
+}
+
+.bannerHead h1 {
+    line-height: 1.2;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0;
+    font-size: calc(calc(calc(calc(calc(calc( 1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    white-space: pre-line;
+    letter-spacing: -0.05em;
+}
+
+.bannerDesc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.bannerImg {
+    height: 600px;
+    width: 50%;
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bannerImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.bannerSub {
+    margin-top: -50px;
+    align-self: center;
+    width: calc(50% - 50px);
+}
+
+.bannerSub > p {
+    margin-bottom: calc(0.625rem * 2);
+    color: #666;
+    font-size: calc(1rem * 1.25);
+    white-space: pre-line;
+}
+
+.bannerSub > form {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.bannerSub > form > div > input {
+    margin-top: 0;
+    width: 100%;
+    height: calc(0.625rem * 5);
+    display: block;
+    font-size: 16px;
+    padding: 14px;
+    color: #111;
+    border: 1px solid;
+    border-color: #eee;
+    line-height: 1.6;
+    position: relative;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    background: #fff;
+    border-radius: calc(0.625rem/2);
+    writing-mode: horizontal-tb;
+}
+
+.bannerSub > form > input {
+    background: #fff;
+    width: 100%;
+    height: calc(0.625rem * 5);
+    display: block;
+    font-size: 16px;
+    padding: 14px;
+    color: #111;
+    border: 1px solid;
+    border-color: #eee;
+    line-height: 1.6;
+    position: relative;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin-top: 10px;
+    border-radius: calc(0.625rem/2);
+    writing-mode: horizontal-tb;
+}
+
+.bannerSub > form > button {
+    cursor: pointer;
+    position: unset;
+    margin-top: 10px;
+    max-width: 100%;
+    height: 50px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: unset;
+    padding: 0 calc(0.625rem * 2);
+    border: none;
+    border-radius: calc(0.625rem/2);
+    color: #fff;
+    background: #0077ff;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        max-width: 100%;
+    }
+
+    .bannerHead h1 {
+        font-size: 36px;
+    }
+
+    .bannerDesc {
+        display: block;
+    }
+
+    .bannerImg {
+        height: calc(600px / 2);
+        width: 100%;
+        margin-bottom: calc(0.625rem * 2);
+    }
+
+    .bannerImg img {
+        height: calc(600px / 2);
+    }
+
+    .bannerSub {
+        width: 100%;
+        margin-top: 0;
+        align-self: unset;
+    }
+
+    .bannerSub > p {
+        font-size: calc(0.875rem * 1.25);
+        width: 100%;
+    }
+
+    .bannerSub > form > div > input {
+        margin-top: 5px;
+    }
+
+    .bannerSub > form > input {
+        margin-top: 5px;
+    }
+
+    .bannerSub > form > button {
+        margin-top: 5px;
+    }
+}

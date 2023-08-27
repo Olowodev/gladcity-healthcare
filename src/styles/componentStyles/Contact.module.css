@@ -1,0 +1,213 @@
+.contact {
+    width: 100%;
+    position: relative;
+}
+
+.contactCont {
+    padding: 0 calc(0.625rem * 2);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    border-radius: 10px;
+}
+
+.contactWrapper {
+    background-color: #eee;
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.contactContent {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.contactLayout {
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+
+.layoutCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(0.625rem * 5) calc(0.625rem * 5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: calc(50% - 50px);
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.contactLeft > h1 {
+    white-space: pre-line;
+    font-weight: 700;
+    font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+    margin-bottom: 0;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+}
+
+.contactLeft > p {
+    color: #686868;
+    font-size: 1rem;
+    margin-top: calc(0.625rem);
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+.contactLeft > form {
+    margin-top: calc(0.625rem * 2);
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.contactLeft > form > input {
+    margin-top: 10px;
+    background: #fff;
+    height: calc(0.625rem * 4);
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #eee;
+    line-height: 1.6;
+    position: relative;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: calc(0.625rem/2);
+    writing-mode: horizontal-tb;
+}
+
+.contactLeft > form > input:first-child {
+    margin-top: 0;
+}
+
+.contactLeft > form > textarea {
+    height: 120px;
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #eee;
+    line-height: 1.6;
+    position: relative;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contactLeft > form > button {
+    cursor: pointer;
+    position: unset;
+    margin-top: 10px;
+    max-width: 100%;
+    height: 40px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: unset;
+    padding: 0 calc(0.625rem * 2);
+    border: none;
+    color: #fff;
+    background: #0077ff;
+    border-radius: calc(0.625rem / 2);
+}
+
+.contactRight {
+    height: 440px;
+    background: #fff;
+    width: 50%;
+    margin-top: 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.contactRight > img {
+    background: #eee;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactCont {
+        max-width: 100%;
+    }
+
+    .contactLayout {
+        max-width: 100%;
+    }
+
+    .layoutCont {
+        flex-direction: column-reverse;
+        justify-content: unset;
+        padding: calc(0.625rem * 2);
+    }
+
+    .contactLeft {
+        width: 100%;
+    }
+
+    .contactLeft > h1 {
+    font-size: calc(calc(calc(0.875rem * 1.25) * 1.25) * 1.25);
+
+    }
+
+    .contactLeft > p {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 0.875rem;
+    }
+
+    .contactLeft > form > input {
+        margin-top: 5px;
+    }
+
+    .contactLeft > form > textarea {
+        height: 100px;
+        margin-top: 5px;
+    }
+
+    .contactLeft > form > button {
+        margin-top: 5px;
+    }
+
+    .contactRight {
+        height: calc(440px/2);
+        width: 100%;
+    }
+    
+    .contactRight > img {
+        height: 100%;
+    }
+}
