@@ -122,6 +122,7 @@
     -webkit-appearance: none;
     outline: none;
     border-radius: 10px;
+    background: #fff;
 }
 
 .contactLeft > form > button {
